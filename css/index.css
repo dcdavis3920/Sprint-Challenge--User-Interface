@@ -1,326 +1,343 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+    /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
-
-
-/* HTML5 display-role reset for older browsers */
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-    display: block;
-}
-
-body {
-    line-height: 1;
-}
-
-ol,
-ul {
-    list-style: none;
-}
-
-blockquote,
-q {
-    quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-    content: '';
-    content: none;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-html,
-body {
-    height: 100%;
-    font-family: 'Roboto', sans-serif;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-    font-size: 18px;
-    margin-bottom: 15px;
-    font-family: 'Rubik', sans-serif;
-}
-
-p {
-    line-height: 1.4;
-}
-
-.container {
-    width: 800px;
-    margin: 0 auto;
-}
-
-.top-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
-}
-
-.top-content .text-container {
-    width: 48%;
-    padding: 0 1%;
-    padding-bottom: 20px;
-}
-
-.middle-content {
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
-}
-
-.middle-content h2 {
-    padding: 0 2%;
-    margin-bottom: 0;
-}
-
-.middle-content .boxes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.middle-content .boxes .box {
-    width: 12.5%;
-    height: 100px;
-    background: black;
-    margin: 20px 2.5%;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.bottom-content {
-    display: flex;
-    margin: 0 2% 20px;
-    justify-content: space-around;
-}
-
-.bottom-content .text-container {
-    padding-right: 4%;
-}
-
-.bottom-content .text-container:last-child {
-    padding-right: 0;
-}
-
-footer {
-    width: 100%;
-    background: black;
-}
-
-footer nav {
-    width: 60%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 13px 2%;
-    font-size: 14px;
-}
-
-footer nav a {
-    color: white;
-    text-decoration: none;
-}
-
-.start {
-    justify-content: space-evenly;
-    display: flex;
-    margin: 0 0 25px 0;
-    width: 70%;
-}
-
-.logo {
-    display: flex;
-    margin: 13px 0 0 0;
-    width: 30%;
-}
-
-.nav1 {
-    display: flex;
-    justify-content: space-evenly;
-    width: 70%;
-    margin: 10px 0 15px 0;
-}
-
-.boxes {
-    display: flex;
-    padding: 75px 0;
-}
-
-.box1 {
-    background-color: teal;
-    padding: 50px;
-    margin: 0 20px 30px 0;
-}
-
-.box2 {
-    background-color: gold;
-    padding: 50px;
-    margin: 0 20px 30px 0;
-}
-
-.box3 {
-    background-color: cadetblue;
-    padding: 50px;
-    margin: 0 20px 30px 0;
-}
-
-.box4 {
-    background-color: coral;
-    padding: 50px;
-    margin: 0 20px 30px 0;
-}
-
-.box5 {
-    background-color: crimson;
-    padding: 50px;
-    margin: 0 0 30px 20px;
-}
-
-.box6 {
-    background-color: forestgreen;
-    padding: 50px;
-    margin: 0 20px 30px 0;
-}
-
-.box7 {
-    background-color: darkorchid;
-    ;
-    padding: 50px;
-    margin: 0 20px 30px 0;
-}
-
-.box8 {
-    background-color: hotpink;
-    padding: 50px;
-    margin: 0 20px 30px 0;
-}
-
-.box9 {
-    background-color: indigo;
-    padding: 50px;
-    margin: 0 20px 30px 0;
-}
-
-.box10 {
-    background-color: dodgerblue;
-    padding: 50px;
-    margin: 0 0 30px 0;
-}
+    
+    html,
+    body,
+    div,
+    span,
+    applet,
+    object,
+    iframe,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    a,
+    abbr,
+    acronym,
+    address,
+    big,
+    cite,
+    code,
+    del,
+    dfn,
+    em,
+    img,
+    ins,
+    kbd,
+    q,
+    s,
+    samp,
+    small,
+    strike,
+    strong,
+    sub,
+    sup,
+    tt,
+    var,
+    b,
+    u,
+    i,
+    center,
+    dl,
+    dt,
+    dd,
+    ol,
+    ul,
+    li,
+    fieldset,
+    form,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td,
+    article,
+    aside,
+    canvas,
+    details,
+    embed,
+    figure,
+    figcaption,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    output,
+    ruby,
+    section,
+    summary,
+    time,
+    mark,
+    audio,
+    video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    section {
+        display: block;
+    }
+    
+    body {
+        line-height: 1;
+    }
+    
+    ol,
+    ul {
+        list-style: none;
+    }
+    
+    blockquote,
+    q {
+        quotes: none;
+    }
+    
+    blockquote:before,
+    blockquote:after,
+    q:before,
+    q:after {
+        content: '';
+        content: none;
+    }
+    
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+    
+    * {
+        box-sizing: border-box;
+    }
+    
+    html,
+    body {
+        height: 100%;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-size: 18px;
+        margin-bottom: 15px;
+        font-family: 'Rubik', sans-serif;
+    }
+    
+    p {
+        line-height: 1.4;
+    }
+    
+    .container {
+        width: 800px;
+        margin: 0 auto;
+    }
+    
+    .top-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-bottom: 20px;
+        border-bottom: 1px dashed black;
+    }
+    
+    .top-content .text-container {
+        width: 48%;
+        padding: 0 1%;
+        padding-bottom: 20px;
+    }
+    
+    .middle-content {
+        margin-bottom: 20px;
+        border-bottom: 1px dashed black;
+    }
+    
+    .middle-content h2 {
+        padding: 0 2%;
+        margin-bottom: 0;
+    }
+    
+    .middle-content .boxes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    
+    .middle-content .boxes .box {
+        width: 12.5%;
+        height: 100px;
+        background: black;
+        margin: 20px 2.5%;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .bottom-content {
+        display: flex;
+        margin: 0 2% 20px;
+        justify-content: space-around;
+    }
+    
+    .bottom-content .text-container {
+        padding-right: 4%;
+    }
+    
+    .bottom-content .text-container:last-child {
+        padding-right: 0;
+    }
+    
+    footer {
+        width: 100%;
+        background: black;
+    }
+    
+    footer nav {
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 13px 2%;
+        font-size: 14px;
+    }
+    
+    footer nav a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    .sec3 {
+        display: flex;
+        justify-content: center;
+        margin: 35px 0;
+    }
+    
+    .start2 {
+        width: 40%;
+    }
+    
+    .start3 {
+        width: 40%
+    }
+    
+    .strat {
+        width: 60%;
+    }
+    
+    .strat1 {
+        width: 60%;
+    }
+    
+    .start {
+        display: flex;
+        margin: 0 0 25px 0;
+        min-width: 500px;
+    }
+    
+    .logo {
+        justify-content: space-evenly;
+        width: 20%;
+    }
+    
+    .nav1 {
+        display: flex;
+        justify-content: space-around;
+        width: 60%;
+    }
+    
+    .boxes {
+        display: flex;
+        padding: 75px 0;
+    }
+    
+    .box1 {
+        background-color: teal;
+        padding: 50px;
+        margin: 0 20px 30px 0;
+    }
+    
+    .box2 {
+        background-color: gold;
+        padding: 50px;
+        margin: 0 20px 30px 0;
+    }
+    
+    .box3 {
+        background-color: cadetblue;
+        padding: 50px;
+        margin: 0 20px 30px 0;
+    }
+    
+    .box4 {
+        background-color: coral;
+        padding: 50px;
+        margin: 0 20px 30px 0;
+    }
+    
+    .box5 {
+        background-color: crimson;
+        padding: 50px;
+        margin: 0 0 30px 20px;
+    }
+    
+    .box6 {
+        background-color: forestgreen;
+        padding: 50px;
+        margin: 0 20px 30px 0;
+    }
+    
+    .box7 {
+        background-color: darkorchid;
+        ;
+        padding: 50px;
+        margin: 0 20px 30px 0;
+    }
+    
+    .box8 {
+        background-color: hotpink;
+        padding: 50px;
+        margin: 0 20px 30px 0;
+    }
+    
+    .box9 {
+        background-color: indigo;
+        padding: 50px;
+        margin: 0 20px 30px 0;
+    }
+    
+    .box10 {
+        background-color: dodgerblue;
+        padding: 50px;
+        margin: 0 0 30px 0;
+    }
