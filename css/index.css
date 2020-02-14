@@ -444,3 +444,8 @@
         color: white;
         text-decoration: none;
     }
+    
+    .type {
+        display: flex;
+        flex-direction: column-reverse;
+    }
